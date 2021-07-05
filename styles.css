@@ -1,20 +1,24 @@
-*,*::after,*::before{
+*, *::after, *::before {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-family: 'Kumbh Sans', sans-serif;
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height:700px;
+    min-height: 700px;
+    max-height: 100vh;
     width: 100vw;
-    background-image:linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
-.container{
+
+.container {
     display: flex;
     background-color: white;
     position: relative;
@@ -24,29 +28,38 @@ body{
     height: 480px;
     border-radius: 20px;
 }
-.illustration-box{
+
+.mobile-illustration-box {
+    display: none;
+}
+
+.illustration-box {
     display: block;
     width: 50%;
     height: 100%;
     overflow: hidden;
     z-index: 21;
 }
-.mobile-bg-img-box-shadow{
+
+.mobile-bg-img-box-shadow {
     display: none;
 }
-.women-illuatration-mobile-svg{
+
+.women-illuatration-mobile-svg {
     display: none;
 }
-.women-desktop-background-img{
+
+.women-desktop-background-img {
     position: relative;
     height: 350px;
     width: 430px;
     z-index: 20;
-    top:10%;
-    right:60px;
+    top: 10%;
+    right: 60px;
 }
-.background-illustration-box{
-    position:absolute;
+
+.background-illustration-box {
+    position: absolute;
     display: block;
     height: 180px;
     width: 180px;
@@ -54,39 +67,44 @@ body{
     top: 41%;
     left: -110px;
 }
-.background-illustration-lines-and-box-shadow{
+
+.background-illustration-lines-and-box-shadow {
     display: block;
     position: relative;
     width: 786px;
-    height:745px;
+    height: 745px;
     right: 400px;
-    bottom:550px;
+    bottom: 550px;
     z-index: 10;
 }
-.faq{
+
+.faq {
     display: flex;
     flex-direction: column;
     width: 50%;
     height: 100%;
     padding: 40px 10px;
     justify-content: space-evenly;
-
 }
-.question-outer-box{
+
+.question-outer-box {
     width: 90%;
     border-bottom: 1px solid hsl(237, 12%, 33%);
 }
-.question{
-    padding: 15px 0px;
 
+.question {
+    padding: 15px 0px;
 }
-.question-inner-box:hover{
+
+.question-inner-box:hover {
     color: rgb(255, 100, 100);
 }
-.questionFontChange{
+
+.questionFontChange {
     font-weight: 700;
 }
-.question-inner-box{
+
+.question-inner-box {
     cursor: pointer;
     width: 100%;
     display: flex;
@@ -97,56 +115,60 @@ body{
     font-weight: 500;
     align-items: center;
 }
-.answer{
+
+.answer {
     display: none;
     padding-bottom: 10px;
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: 300;
     font-size: 13px;
 }
-.show-answer{
+
+.show-answer {
     display: block;
 }
-.arrow-icon-rotate{
+
+.arrow-icon-rotate {
     transform: rotate(180deg);
 }
+
 @media screen and (max-width:1070px) {
-    .container{
+    .container {
         width: 80%;
     }
 }
+
 @media screen and (max-width:980px) {
-    .container{
+    .container {
         flex-direction: column;
     }
-    .faq{
+    .faq {
         width: 100%;
     }
-    .faq h1{
+    .faq h1 {
         margin: 0px auto;
     }
-    .question-outer-box{
+    .question-outer-box {
         width: 95%;
         margin: 0px auto;
     }
-    .mobile-illustration-box{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-    }
-    .illustration-box{
+    .mobile-illustration-box {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-    .mobile-bg-img-box-shadow{
+    .illustration-box {
+        display: none;
+    }
+    .mobile-bg-img-box-shadow {
         display: block;
         margin: auto;
         position: relative;
         margin-top: -90px;
         /* right: -15px; */
     }
-    .women-illuatration-mobile-svg{
+    .women-illuatration-mobile-svg {
         display: block;
         position: relative;
         margin: auto;
@@ -154,9 +176,7 @@ body{
         margin-top: -110px;
         left: -15px;
     }
-    .women-desktop-background-img,
-    .background-illustration-lines-and-box-shadow,
-    .background-illustration-box{
+    .women-desktop-background-img, .background-illustration-lines-and-box-shadow, .background-illustration-box {
         display: none;
     }
 }
