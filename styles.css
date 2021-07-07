@@ -14,7 +14,7 @@ body {
     align-items: center;
     min-height: 700px;
     max-height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
     background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
 
